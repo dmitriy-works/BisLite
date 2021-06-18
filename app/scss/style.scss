@@ -1,0 +1,42 @@
+
+@import 'vars';
+@import 'global';
+@import 'fonts';
+     
+
+.header{
+  background-color: $bg; 
+}
+.header__inner{
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.header__logo{
+  a{
+  color: #000;
+  font-size: 50px;
+  font-weight: 700;
+  span{
+    color: $blue;
+    font-weight: 400;
+  }
+  }  
+}
+
+.header__menu-list{
+  li{
+    display: inline-block;
+    &+li{
+      margin-left: 50px;
+    }
+    a{
+      color: #000;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

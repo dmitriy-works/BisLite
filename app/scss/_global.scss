@@ -1,0 +1,36 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+body {
+  color: #363636;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+
+
+.container{
+  max-width: 1030px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
