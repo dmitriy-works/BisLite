@@ -1,72 +1,33 @@
-@font-face {
-  font-family: 'Roboto-Regular', sans-serif;
-  src:url('../fonts/Roboto-Regular.woff2') format('woff2'),
-      url('../fonts/Roboto-Regular.woff') format('woff');
-      font-weight: 400;
-      font-display: swap;
-
-}
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?f3bmwx');
-  src:  url('../fonts/icomoon.eot?f3bmwx#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?f3bmwx') format('truetype'),
-    url('../fonts/icomoon.woff?f3bmwx') format('woff'),
-    url('../fonts/icomoon.svg?f3bmwx#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: 'Lato';
+    src: local('../Lato Regular'), local('Lato-Regular'), url('../latoregular.woff2') format('woff2'), url('../latoregular.woff') format('woff'), url('../latoregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium'), local('Lato-Medium'), url('latomedium.woff2') format('woff2'), url('latomedium.woff') format('woff'), url('latomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
-.icon-search:before {
-  content: "\f002";
+
+
+@font-face {
+    font-family: 'Lato';
+    src: local('../Lato Bold'), local('Lato-Bold'), url('../latobold.woff2') format('woff2'), url('../latobold.woff') format('woff'), url('../latobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
-.icon-th-large:before {
-  content: "\f009";
+
+
+
+@font-face {
+    font-family: 'Lato';
+    src: local('../Lato Black'), local('Lato-Black'), url('../latoblack.woff2') format('woff2'), url('../latoblack.woff') format('woff'), url('../latoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
-.icon-th-list:before {
-  content: "\f00b";
-}
-.icon-map-marker:before {
-  content: "\f041";
-}
-.icon-phone:before {
-  content: "\f095";
-}
-.icon-sort:before {
-  content: "\f0dc";
-}
-.icon-unsorted:before {
-  content: "\f0dc";
-}
-.icon-bolt:before {
-  content: "\f0e7";
-}
-.icon-flash:before {
-  content: "\f0e7";
-}
-.icon-angle-right:before {
-  content: "\f105";
-}
-.icon-location-arrow:before {
-  content: "\f124";
-}
-.icon-sort-amount-desc:before {
-  content: "\f161";
-}
+

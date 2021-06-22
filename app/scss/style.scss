@@ -16,6 +16,7 @@
 
 .header__logo{
   a{
+  font-family: 'Lato', sans-serif;
   color: #000;
   font-size: 50px;
   font-weight: 700;
@@ -27,16 +28,108 @@
 }
 
 .header__menu-list{
+  margin-right: 20px;
   li{
     display: inline-block;
     &+li{
       margin-left: 50px;
     }
-    a{
-      color: #000;
+    a{      
       font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
+      padding-top: 9px;
+      padding-bottom: 13px;
     }
   }
 }
+
+.header__drop-down.drop-down{  
+  margin-left: 39px;
+}
+
+.header__drop-down.drop-down + .header__drop-down.drop-down{
+  margin-left: 12px;
+}
+
+.header__drop-down{
+  position: relative;
+}
+
+.drop-down__list{
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .2s; 
+  position: absolute;  
+  width: 200px;  
+  background-color: #fff;
+  border: 1px solid rgb(232, 235, 241);
+  border-bottom: 5px solid $blue;
+  border-top: none;
+  box-shadow: 2.5px 4.33px 0px 0px rgba(42, 172, 200, 0.004);  
+  padding: 10px 5px;   
+}
+
+.drop-down__list li a{
+  text-transform: none; 
+  font-weight: 400;  
+  display: block;   
+  padding: 12px 0 12px 11px;    
+  transition: all .2s; 
+}
+
+.drop-down__list li a:hover{
+  color: $blue;
+}
+
+
+.drop-down__list li+li a{
+  border-top: 1px solid #e7e7e7;
+}
+
+.header__drop-down .drop-down__list li{
+  margin-left: 0;
+  display: block;
+}
+
+
+
+.header__drop-down > a{  
+  position: relative;
+  transition: all .2s;
+  padding-left: 11px;
+  padding-right: 26px;
+  border-top: 5px solid transparent;    
+  &::before{
+    content: '';
+    position: absolute;
+    right: 9px;
+    top: 15px;
+    width: 7px;
+    height: 5px;
+    background-image: url('../images/down\ arrow.png');
+    background-repeat: no-repeat;
+  }
+}
+
+
+.header__drop-down.drop-down:hover .drop-down__list{
+  height: auto;
+  opacity: 1;
+  overflow:visible;
+  transition: all .2s; 
+}
+
+.header__drop-down.drop-down:hover > a{
+  color: $blue;   
+    border-top: 5px solid $blue;
+    background-color: #fff;
+    transition: all .2s;
+}
+
+.header__drop-down.drop-down + .header__link-blog{
+  margin-left: 26px;
+}
+
+
