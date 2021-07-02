@@ -6,11 +6,17 @@ $(function(){
     starWidth: "12px"
   });
 
-  $(".products-slider__inner").slick({
-    dots: true,
+  $(".slider__inner").slick({
     arrows: false,
+    dots:true,    
+  });
+
+  $(".about__inner").slick({       
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
+    prevArrow:'<button class="slick-arrow slick-prev"><img src="images/slide-left.svg" alt=""></button>',
+    nextArrow:'<button class="slick-arrow slick-next"><img src="images/slide-right.svg" alt=""></button>',
+
   });
 
   $(".js-range-slider").ionRangeSlider({
